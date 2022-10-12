@@ -3,7 +3,7 @@ class Solution {
         int low=0;
         int high=a.length-1;
         while(low<=high){
-            int mid=(low+high)/2;
+            int mid=low+(high-low)/2;
             if(a[low]==t){
                 return true;
             }else if(a[high]==t){

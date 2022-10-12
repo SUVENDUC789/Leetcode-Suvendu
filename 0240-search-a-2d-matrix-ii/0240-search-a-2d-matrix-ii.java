@@ -1,12 +1,25 @@
 class Solution {
-    public boolean searchMatrix(int[][] a, int target) {
-        for(int []x:a){
-        for(int i:x){
-            if(i==target){
+    public static boolean search(int []a,int t){
+        int low=0;
+        int high=a.length-1;
+        while(low<=high){
+            int mid=(low+high)/2;
+            if(a[mid]==t){
                 return true;
+            }else if(a[mid]>t){
+                high=mid-1;
+            }else{
+                low=mid+1;
             }
         }
+        return false;
     }
+    public boolean searchMatrix(int[][] a, int target) {
+      for(int []x:a){
+          if(search(x,target)){
+              return true;
+          }
+      }
         return false;
     }
 }

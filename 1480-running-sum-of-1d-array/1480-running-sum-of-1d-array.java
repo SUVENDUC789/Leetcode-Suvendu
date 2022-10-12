@@ -8,7 +8,6 @@ class Solution {
                 sum+=nums[j];
                 
             }
-            // System.out.println(sum);
             a[i]=sum;
         }
         

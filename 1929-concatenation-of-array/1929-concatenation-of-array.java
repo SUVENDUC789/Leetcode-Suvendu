@@ -5,9 +5,6 @@ class Solution {
             b[i]=a[i];
             b[i+a.length]=a[i];
         }
-        // for(int i=a.length;i<2*a.length;i++){
-        //     b[i]=a[i-a.length];
-        // }
         return b;
     }
 }

@@ -2,6 +2,7 @@ class Solution {
     public String[] sortPeople(String[] n, int[] h) {
         
         for(int i=0;i<h.length;i++){
+            boolean issort=false;
             for(int j=0;j<h.length-i-1;j++){
                 if(h[j]<h[j+1]){
                     int temp=h[j];
@@ -12,7 +13,12 @@ class Solution {
                     
                     h[j+1]=temp;
                     n[j+1]=t;
+                    
+                    issort=true;
                 }
+            }
+            if(!issort){
+                break;
             }
         }
         

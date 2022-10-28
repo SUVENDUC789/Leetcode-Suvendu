@@ -1,13 +1,6 @@
 class Solution {
     public int missingNumber(int[] nums) {
         
-        // int []range=new int [nums.length+1];
-        
-        // // [0, n]
-        // for(int i=0;i<=nums.length;i++){
-        //     range[i]=i;
-        // }
-        
         for(int i=0;i<=nums.length;i++){
             int check=i;
             for(int j=0;j<nums.length;j++){
@@ -19,9 +12,7 @@ class Solution {
                 return check;
             }
         }
-        
-        // System.out.println(Arrays.toString(range));
-        
+                
         return 0;
         
     }

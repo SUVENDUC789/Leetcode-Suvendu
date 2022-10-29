@@ -1,17 +1,17 @@
 class Solution {
     public int missingNumber(int[] nums) {
         
+        int []hsh=new int [nums.length+1];
+        for (int i=0;i<nums.length;i++){
+            hsh[nums[i]]=1;
+        }
+        
         for(int i=0;i<=nums.length;i++){
-            int check=i;
-            for(int j=0;j<nums.length;j++){
-                if(check==nums[j]){
-                    check=-108;
-                }
-            }
-            if(check!=-108){
-                return check;
+            if(hsh[i]==0){
+                return i;
             }
         }
+    
                 
         return 0;
         

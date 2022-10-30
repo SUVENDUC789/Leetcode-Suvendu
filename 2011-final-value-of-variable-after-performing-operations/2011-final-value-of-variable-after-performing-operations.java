@@ -1,7 +1,6 @@
 class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int increment=0;
-        // int decrement=0;
         for(int i=0;i<operations.length;i++){
             if(operations[i].equals("++X") || operations[i].equals("X++"))
             {
@@ -9,16 +8,10 @@ class Solution {
             }
             else if(operations[i].equals("--X") || operations[i].equals("X--"))
             {
-                // decrement++;
                 increment--;
             }
             
         }
-//         System.out.println(increment);
-        
-//         System.out.println(decrement);
-        
-        // return (increment-decrement);
         return increment;
     }
 }

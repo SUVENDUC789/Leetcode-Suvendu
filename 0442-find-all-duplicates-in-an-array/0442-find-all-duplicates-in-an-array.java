@@ -12,8 +12,6 @@ class Solution {
                 hsh[nums[i]]=0;
             }
         }
-        // System.out.println(Arrays.toString(nums));
-        // System.out.println(Arrays.toString(hsh));
         return llist;
     }
 }

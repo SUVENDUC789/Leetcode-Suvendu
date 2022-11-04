@@ -4,7 +4,11 @@ class Solution {
         int high=a.length-1;
         while(low<=high){
             int mid=(low+high)/2;
-            if(a[mid]==num){
+            if(a[high]==num){return true;}
+            else if(a[low]==num){
+                return true;
+            }
+            else if(a[mid]==num){
                 return true;
             }else if(a[mid]>num){
                 high=mid-1;

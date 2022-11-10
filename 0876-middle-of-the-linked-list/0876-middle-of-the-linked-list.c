@@ -13,10 +13,10 @@ struct ListNode* middleNode(struct ListNode* head){
         c++;
         p=p->next;
     }
-    printf("%d",c);
     int i=0;
     while(q){
         if(i==c/2){
+            free(p);
             return q;
         }
         i++;

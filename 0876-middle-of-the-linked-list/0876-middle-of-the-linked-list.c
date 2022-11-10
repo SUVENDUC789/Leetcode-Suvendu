@@ -16,6 +16,7 @@ struct ListNode* middleNode(struct ListNode* head){
     int i=0;
     while(q){
         if(i==c/2){
+            // free(head);
             free(p);
             return q;
         }

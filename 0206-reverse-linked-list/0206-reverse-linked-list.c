@@ -21,7 +21,7 @@ struct ListNode* reverseList(struct ListNode* head){
     int k=0;
     while(q){
         a[k]=q->val;
-        printf("%d %d\n",k,a[k]);
+        // printf("%d %d\n",k,a[k]);
         k++;
         q=q->next;
     }

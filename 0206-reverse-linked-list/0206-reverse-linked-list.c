@@ -31,5 +31,6 @@ struct ListNode* reverseList(struct ListNode* head){
         s=s->next;
     }
     // printf("%d\n",i);
+    free(a);
     return head;
 }

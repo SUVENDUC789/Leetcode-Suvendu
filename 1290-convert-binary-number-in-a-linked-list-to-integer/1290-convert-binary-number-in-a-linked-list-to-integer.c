@@ -26,11 +26,13 @@ int getDecimalValue(struct ListNode* head){
     int size=SizeofList(head);
     int *a=(int *)calloc(size,sizeof(int));
     initializedArray(head,a,size);
+    free(head);
     int desc=0,j=0;
     for(int i=size-1;i>=0;i--){
         desc+=a[i] * pow(2, j);
         j++;
     }
+    free(a);
     return desc;
 
 }

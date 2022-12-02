@@ -1,6 +1,6 @@
 class Solution {
     public int[] createTargetArray(int[] nums, int[] index) {
-        LinkedList<Integer> list = new LinkedList();
+        LinkedList<Integer> list = new LinkedList<Integer>();
 
         for (int i = 0; i < nums.length; i++) {
             list.add(index[i], nums[i]);
